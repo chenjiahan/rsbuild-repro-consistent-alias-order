@@ -29,6 +29,12 @@ const config = {
   experiments: {
     css: true,
   },
+  resolve: {
+    alias: {
+      "@foo/index": path.join(__dirname, "./src/b/index"),
+      "@foo": path.join(__dirname, "./src/a"),
+    },
+  },
 };
 
 export default config;
